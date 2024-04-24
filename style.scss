@@ -176,6 +176,7 @@ button:hover{
         text-align: center;
         border-radius: 40px 6px;
         position: relative;
+        transition: all 0.1s ease-in-out;
         h4{
             font-family: "David Libre";
             color: $black;
@@ -194,17 +195,49 @@ button:hover{
             width: 80%;
         }
     }
+    .dish:hover{
+        background-color: $white;
+        cursor: pointer;
+    }
 }
 .gallery{
     background-color:$bggrey;
-    padding-top: 3rem;
+    padding: 3rem 0rem 3rem 0rem;
     display: flex;
     .gallery-left{
         text-align: center;
         width: 50%;
+        position: relative;
+        .bowl{
+            width: 60%;
+        }
+        .leaf1{
+            position: absolute;
+            top: 60px;
+            left: 117px;
+            width: 10%;
+        } 
+        .leaf2{
+            position: absolute;
+            top: 65px;
+            right: 40px;
+            width: 20%;
+        } 
+        .leaf3{
+            position: absolute;
+            bottom: -2px;
+            left: 180px;
+            width: 20%;
+        } 
+        .leaf4{
+            position: absolute;
+            bottom: -40px;
+            right: 200px;
+            width: 10%;
+        } 
     }
     .gallery-right{
-        width: 34%;
+        width: 50%;
         padding-top: 8rem;
         h2{
             font-family: "David Libre";
@@ -215,6 +248,46 @@ button:hover{
         p{
             line-height: 29px;
             margin-bottom: 1rem;
+        }
+    }
+}
+.chef{
+    display: flex;
+    margin-top: 8rem;
+    text-align: center;
+
+    .left-chef{
+        position: relative;
+        width: 50%;
+        h2{
+            font-family: "David Libre";
+            font-size: 60px;
+            line-height: 65px;
+            color: $black;
+            margin-bottom: 2rem;
+        }
+        p{
+            line-height: 29px;
+            margin-bottom: 1rem;
+        }
+    }
+    .right-chef{
+        width:50%;
+        text-align: center;
+        position: relative;
+        .round{
+            background-color: $orange;
+            border-radius: 50%;
+            height: 500px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            img{
+                width: 70%;
+                position: absolute;
+                top: -90px;
+                left: 100px;
+            }
         }
     }
 }

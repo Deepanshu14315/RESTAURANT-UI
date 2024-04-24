@@ -169,6 +169,7 @@ button:hover {
   text-align: center;
   border-radius: 40px 6px;
   position: relative;
+  transition: all 0.1s ease-in-out;
 }
 .special-dish .dish h4 {
   font-family: "David Libre";
@@ -187,18 +188,50 @@ button:hover {
   left: 26px;
   width: 80%;
 }
+.special-dish .dish:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
 
 .gallery {
   background-color: #f3f4f4;
-  padding-top: 3rem;
+  padding: 3rem 0rem 3rem 0rem;
   display: flex;
 }
 .gallery .gallery-left {
   text-align: center;
   width: 50%;
+  position: relative;
+}
+.gallery .gallery-left .bowl {
+  width: 60%;
+}
+.gallery .gallery-left .leaf1 {
+  position: absolute;
+  top: 60px;
+  left: 117px;
+  width: 10%;
+}
+.gallery .gallery-left .leaf2 {
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  width: 20%;
+}
+.gallery .gallery-left .leaf3 {
+  position: absolute;
+  bottom: -2px;
+  left: 180px;
+  width: 20%;
+}
+.gallery .gallery-left .leaf4 {
+  position: absolute;
+  bottom: -40px;
+  right: 200px;
+  width: 10%;
 }
 .gallery .gallery-right {
-  width: 34%;
+  width: 50%;
   padding-top: 8rem;
 }
 .gallery .gallery-right h2 {
@@ -210,4 +243,44 @@ button:hover {
 .gallery .gallery-right p {
   line-height: 29px;
   margin-bottom: 1rem;
+}
+
+.chef {
+  display: flex;
+  margin-top: 8rem;
+  text-align: center;
+}
+.chef .left-chef {
+  position: relative;
+  width: 50%;
+}
+.chef .left-chef h2 {
+  font-family: "David Libre";
+  font-size: 60px;
+  line-height: 65px;
+  color: #101A24;
+  margin-bottom: 2rem;
+}
+.chef .left-chef p {
+  line-height: 29px;
+  margin-bottom: 1rem;
+}
+.chef .right-chef {
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.chef .right-chef .round {
+  background-color: #EA6D27;
+  border-radius: 50%;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.chef .right-chef .round img {
+  width: 70%;
+  position: absolute;
+  top: -90px;
+  left: 100px;
 }/*# sourceMappingURL=style.css.map */
