@@ -1,0 +1,220 @@
+$orange: #EA6D27;
+$black: #101A24;
+$white: #fff;
+$bggrey: #f3f4f4;
+$textcolor: #5C6574;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: $textcolor;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1.5rem 4rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+
+        a {
+            text-decoration: none;
+            color: $textcolor;
+        }
+    }
+    a:hover{
+        color: $orange;
+    }
+
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.orange-btn {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    font-weight: 500;
+    padding: 0.85rem 1.5rem;
+    font-family: "David Libre", serif;
+    border-radius: 10px 4px;
+    white-space: nowrap;
+}
+.black-btn {
+    background-color: $black;
+    color: $white;
+    border: none;
+    font-weight: 500;
+    padding: 0.85rem 1.5rem;
+    font-family: "David Libre", serif;
+    border-radius: 10px 4px;
+    white-space: nowrap;
+    margin-right: 0.85rem;
+}
+.hero{
+    margin:2rem 4rem;
+    display: flex;
+    padding:2rem 0;  
+    .hero-left{
+        width:50%;
+        padding-top: 6rem;
+    }
+    h2{
+        font-size: 72px;
+        font-family: "David Libre", serif;
+        line-height: 72px;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: $black;
+    }
+    p{
+        line-height: 29px;
+        margin-bottom: 2rem;
+    }
+    .social-logo{
+        margin-top: 5rem;
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+
+    .hero-right{
+        width: 50%;
+        text-align: center;
+        position: relative;
+        >{
+            .hall{
+
+                height: 100%;
+                width: 80%;
+                object-fit: contain;
+                z-index: 3;
+            }
+            .bowl{
+                position: absolute;
+                left: -106px;
+                bottom: 80px;
+                width: 50%;
+                object-fit: contain;
+            }
+            .leave1{
+                position: absolute;
+                top: 20px;
+                left: -35px;
+                width: 50%;
+                object-fit: contain;
+                transform: rotate(7deg);
+                z-index: -3;
+            }
+            .leave2{
+                position: absolute;
+                top: -3px;
+                right: -18px;
+                width: 32%;
+                object-fit: contain;
+                z-index: -3;
+            }
+            .leave3{
+                position: absolute;
+                bottom: 100px;
+                right: -54px;
+                width: 30%;
+                object-fit: contain;
+                z-index: -3;
+
+            }
+        }
+    }
+
+}
+.special-dish{
+    background-color:$bggrey;
+    text-align: center;
+    padding: 3rem 0rem 3rem 0rem;
+
+    >h3{
+        color: $black;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "David Libre";
+        line-height: 65px;
+        padding: 4rem 0rem 1rem 0rem;
+    }
+    >p{
+        line-height: 27px;
+        margin-bottom: 6rem;
+    }
+    .dishes{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        padding-top: 2rem;
+
+        >:first-child{
+            background-color: $white;
+        }
+    }
+    .dish{
+        padding-top: 7.5rem;
+        width:18%;
+        text-align: center;
+        border-radius: 40px 6px;
+        position: relative;
+        h4{
+            font-family: "David Libre";
+            color: $black;
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 12px;
+            padding-bottom: 2rem;
+            line-height: 27px;
+        }
+        img{
+            position: absolute;
+            top: -80px;
+            left: 26px;
+            width: 80%;
+        }
+    }
+}
+.gallery{
+    background-color:$bggrey;
+    padding-top: 3rem;
+    display: flex;
+    .gallery-left{
+        text-align: center;
+        width: 50%;
+    }
+    .gallery-right{
+        width: 34%;
+        padding-top: 8rem;
+        h2{
+            font-family: "David Libre";
+            font-size: 60px;
+            line-height: 65px;
+            color: $black;
+        }
+        p{
+            line-height: 29px;
+            margin-bottom: 1rem;
+        }
+    }
+}
