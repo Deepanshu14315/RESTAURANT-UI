@@ -16,6 +16,8 @@ $textcolor: #5C6574;
 body {
     font-family: "Montserrat", sans-serif;
     color: $textcolor;
+    height: 100vh;
+    width: 100%;
 }
 
 header {
@@ -54,6 +56,7 @@ button:hover{
     font-family: "David Libre", serif;
     border-radius: 10px 4px;
     white-space: nowrap;
+    font-size: 16px;
 }
 .black-btn {
     background-color: $black;
@@ -62,6 +65,7 @@ button:hover{
     font-weight: 500;
     padding: 0.85rem 1.5rem;
     font-family: "David Libre", serif;
+    font-size: 16px;
     border-radius: 10px 4px;
     white-space: nowrap;
     margin-right: 0.85rem;
@@ -206,7 +210,7 @@ button:hover{
     display: flex;
     .gallery-left{
         text-align: center;
-        width: 50%;
+        width: 52%;
         position: relative;
         .bowl{
             width: 60%;
@@ -219,8 +223,8 @@ button:hover{
         } 
         .leaf2{
             position: absolute;
-            top: 65px;
-            right: 40px;
+            top: 50px;
+            right: 45px;
             width: 20%;
         } 
         .leaf3{
@@ -253,9 +257,7 @@ button:hover{
 }
 .chef{
     display: flex;
-    margin-top: 8rem;
-    text-align: center;
-
+    margin: 8rem;
     .left-chef{
         position: relative;
         width: 50%;
@@ -265,29 +267,41 @@ button:hover{
             line-height: 65px;
             color: $black;
             margin-bottom: 2rem;
+            text-align: center;
         }
         p{
             line-height: 29px;
             margin-bottom: 1rem;
+            text-align: center;
+        }
+        img{
+            position: absolute;
+            top: -80px;
+            left: -128px;
+            width: 60%;
+        }
+        .lists{
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
         }
     }
     .right-chef{
         width:50%;
-        text-align: center;
         position: relative;
         .round{
             background-color: $orange;
-            border-radius: 50%;
-            height: 500px;
-            width: 80%;
-            margin: auto;
+            border-radius: 55% 45%;
+            height: 380px;
+            width: 90%;
+            margin: 0 6rem;
             overflow: hidden;
-            img{
-                width: 70%;
-                position: absolute;
-                top: -90px;
-                left: 100px;
-            }
+        }
+        .chef{
+            width: 72%;
+            position: absolute;
+            top: -223px;
+            left: 10px;
         }
     }
 }

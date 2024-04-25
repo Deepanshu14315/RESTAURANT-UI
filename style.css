@@ -9,6 +9,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #5C6574;
+  height: 100vh;
+  width: 100%;
 }
 
 header {
@@ -46,6 +48,7 @@ button:hover {
   font-family: "David Libre", serif;
   border-radius: 10px 4px;
   white-space: nowrap;
+  font-size: 16px;
 }
 
 .black-btn {
@@ -55,6 +58,7 @@ button:hover {
   font-weight: 500;
   padding: 0.85rem 1.5rem;
   font-family: "David Libre", serif;
+  font-size: 16px;
   border-radius: 10px 4px;
   white-space: nowrap;
   margin-right: 0.85rem;
@@ -200,7 +204,7 @@ button:hover {
 }
 .gallery .gallery-left {
   text-align: center;
-  width: 50%;
+  width: 52%;
   position: relative;
 }
 .gallery .gallery-left .bowl {
@@ -214,8 +218,8 @@ button:hover {
 }
 .gallery .gallery-left .leaf2 {
   position: absolute;
-  top: 65px;
-  right: 40px;
+  top: 50px;
+  right: 45px;
   width: 20%;
 }
 .gallery .gallery-left .leaf3 {
@@ -247,8 +251,7 @@ button:hover {
 
 .chef {
   display: flex;
-  margin-top: 8rem;
-  text-align: center;
+  margin: 8rem;
 }
 .chef .left-chef {
   position: relative;
@@ -260,27 +263,39 @@ button:hover {
   line-height: 65px;
   color: #101A24;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .chef .left-chef p {
   line-height: 29px;
   margin-bottom: 1rem;
+  text-align: center;
+}
+.chef .left-chef img {
+  position: absolute;
+  top: -80px;
+  left: -128px;
+  width: 60%;
+}
+.chef .left-chef .lists {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
 }
 .chef .right-chef {
   width: 50%;
-  text-align: center;
   position: relative;
 }
 .chef .right-chef .round {
   background-color: #EA6D27;
-  border-radius: 50%;
-  height: 500px;
-  width: 80%;
-  margin: auto;
+  border-radius: 55% 45%;
+  height: 380px;
+  width: 90%;
+  margin: 0 6rem;
   overflow: hidden;
 }
-.chef .right-chef .round img {
-  width: 70%;
+.chef .right-chef .chef {
+  width: 72%;
   position: absolute;
-  top: -90px;
-  left: 100px;
+  top: -223px;
+  left: 10px;
 }/*# sourceMappingURL=style.css.map */
