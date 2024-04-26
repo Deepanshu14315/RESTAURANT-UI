@@ -143,7 +143,8 @@ button:hover {
 .special-dish {
   background-color: #f3f4f4;
   text-align: center;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 3rem 0rem;
+  position: relative;
 }
 .special-dish > h3 {
   color: #101A24;
@@ -157,18 +158,28 @@ button:hover {
   line-height: 27px;
   margin-bottom: 6rem;
 }
+.special-dish img {
+  position: absolute;
+  top: 115px;
+  right: 480px;
+  width: 20%;
+}
 .special-dish .dishes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 3rem;
   padding-top: 2rem;
+  position: relative;
 }
-.special-dish .dishes > :first-child {
-  background-color: #fff;
+.special-dish .dishes .sl2 {
+  position: absolute;
+  top: 16px;
+  left: 223px;
+  width: 16%;
 }
 .special-dish .dish {
-  padding-top: 7.5rem;
+  padding-top: 8.5rem;
   width: 18%;
   text-align: center;
   border-radius: 40px 6px;
@@ -197,10 +208,29 @@ button:hover {
   cursor: pointer;
 }
 
+.lumpia {
+  background-color: #fff;
+}
+
 .gallery {
   background-color: #f3f4f4;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 6rem 0rem;
   display: flex;
+  position: relative;
+}
+.gallery .leave2 {
+  position: absolute;
+  top: 110px;
+  width: 11%;
+  right: 455px;
+  opacity: 0.6;
+}
+.gallery .leave5 {
+  position: absolute;
+  top: 240px;
+  width: 17%;
+  right: 0;
+  transform: rotate(-5deg);
 }
 .gallery .gallery-left {
   text-align: center;
@@ -298,4 +328,28 @@ button:hover {
   position: absolute;
   top: -223px;
   left: 10px;
+}
+
+.reviews {
+  text-align: center;
+  background-color: #f3f4f4;
+  padding-top: 5rem;
+  position: relative;
+}
+.reviews h2 {
+  color: #101A24;
+  font-size: 60px;
+  font-family: "David Libre";
+  font-weight: bold;
+  line-height: 65px;
+}
+.reviews p {
+  line-height: 29px;
+  margin-top: 1rem;
+}
+.reviews .frypan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */
