@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #5C6574;
@@ -138,6 +142,18 @@ button:hover {
   -o-object-fit: contain;
      object-fit: contain;
   z-index: -3;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  z-index: -1;
+  border: 1px solid rgba(34, 34, 34, 0.1764705882);
+  top: -40;
+  left: -500px;
+  border-radius: 50%;
 }
 
 .special-dish {
@@ -389,4 +405,70 @@ button:hover {
 .reviews .cs-review h5 {
   margin-top: 2rem;
   font-weight: bold;
+}
+
+footer {
+  margin: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+footer .fimg {
+  margin-bottom: 1rem;
+}
+footer p {
+  font-size: 0.85rem;
+  line-height: 29px;
+}
+footer a {
+  text-decoration: none;
+  color: #5C6574;
+  font-size: 0.85rem;
+}
+footer .ftop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .flogo {
+  width: 30%;
+}
+footer .flinks {
+  display: flex;
+  margin-top: 2rem;
+}
+footer .flinks li {
+  list-style: none;
+  padding-bottom: 1rem;
+  padding-right: 4rem;
+}
+footer h5 {
+  text-transform: uppercase;
+}
+footer .social {
+  margin-top: 1.5rem;
+}
+footer .social img {
+  padding-top: 0.5rem;
+  width: 20%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+footer .opening {
+  margin-top: 2rem;
+}
+footer .fbot {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+  margin-top: 2rem;
+  border-top: 1px solid #f3f4f4;
+  justify-content: space-between;
+}
+footer .ffrypan {
+  position: absolute;
+  width: 40%;
+  top: -120px;
+  opacity: 0.8;
+  transform: rotate(-75deg);
+  left: 420px;
 }/*# sourceMappingURL=style.css.map */
